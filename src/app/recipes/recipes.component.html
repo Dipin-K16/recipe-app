@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-5">
+<app-recipe-list ></app-recipe-list> 
+<!-- (recipeWasSelected)="selectedRecipe = $event" -->
+<!-- //the data passed through event is stored in selectedRecipe from recipeItem -> recipeList -> recipe -->
+    </div>
+    <div class="col-md-7">
+
+        <router-outlet></router-outlet>
+
+        <!-- <app-recipe-detail [recipe]="selectedRecipe" *ngIf="selectedRecipe; else infoText"></app-recipe-detail>  -->
+        <!-- //here selected recipe is passed to recipedetail and ngif is used to display the detail only if the selected recipe is defined else it displays info text in ng-template -->
+        <!-- <ng-template #infoText>
+            <p>Please select a Recipe!</p>
+        </ng-template> -->
+    </div>
+</div>

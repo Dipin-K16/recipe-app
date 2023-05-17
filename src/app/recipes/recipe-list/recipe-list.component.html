@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button (click)="onNewRecipe()" class="btn btn-success">New recipe</button>
+  </div>
+  <hr>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+       <app-recipe-item *ngFor="let recipeEl of recipes; let i = index" [index]="i" [recipes]="recipeEl"></app-recipe-item> 
+       <!-- (recipeSelected)="onRecipeSelected(recipeEl)" -->
+       <!-- //here each recipe in for loop is send to recipe item and there it recieves in input and that input is used to iterate the item there -->
+       <!-- {index} is passed to reccipeitem and from that it gets the index to which it is routed or which element is to be displayed -->
+  </div>
+</div>

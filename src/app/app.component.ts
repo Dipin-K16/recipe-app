@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipie-app';
+
+  // loadedFeature = 'recipe'; used before routing
+
+  // onNavigate(feature: string){
+  //   this.loadedFeature=feature;
+  // }
+
 }
