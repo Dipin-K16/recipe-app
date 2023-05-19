@@ -5,11 +5,13 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
+import { MealsComponent } from './meals/meals.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
     path:'',
-    redirectTo: '/recipes',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   {
@@ -33,6 +35,14 @@ const routes: Routes = [
   {
     path:'shoppinglist',
     component: ShoppingListComponent,
+  },
+  {
+    path:'meals',
+    component: MealsComponent,
+  },
+  {
+    path:'home',
+    component: HomeComponent,
   },
  
 ];

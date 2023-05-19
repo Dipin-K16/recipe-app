@@ -1,0 +1,36 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .card-title {
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 23px 0 0 86px;
+
+  }

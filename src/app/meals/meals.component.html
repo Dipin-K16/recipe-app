@@ -1,0 +1,13 @@
+<div class="card-container align-iems-center">
+<div class="row">
+<div class="col-md-6" *ngFor="let meal of meals">
+    <div class="card">
+        <img class="card-image" [src]="meal.strCategoryThumb" alt="Category Image">
+        <div class="card-body">
+            <h5 class="card-title">{{ meal.strCategory }}</h5>
+            <p class="card-description">{{ meal.strCategoryDescription }}</p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
