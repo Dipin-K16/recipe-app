@@ -8,9 +8,9 @@
           </div>
           <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
             <ul class="nav navbar-nav">
-                <li routerLinkActive="active"><a routerLink="recipes">Recipies</a></li>
-                <li routerLinkActive="active"><a routerLink="shoppinglist" >Shopping-list</a></li>
-                <li routerLinkActive="active"><a routerLink="meals" >Meals Category</a></li>
+                <li routerLinkActive="active"><a routerLink="body/recipes">Recipies</a></li>
+                <li routerLinkActive="active"><a routerLink="body/shoppinglist" >Shopping-list</a></li>
+                <li routerLinkActive="active"><a routerLink="body/meals" >Meals Category</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown" appDropDown>
@@ -23,4 +23,5 @@
             </ul>
         </div>
     </div>
+    <hr>
 </nav>

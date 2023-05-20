@@ -1,0 +1,92 @@
+.container-box {
+    background-image: url('/assets/pexels-karolina-grabowska-4033634.jpg' );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+}
+
+.banner{
+    background-color: rgba(0, 0, 0, 0.33);
+    height: 450px;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+
+}
+
+
+.hero{
+ background-image: url('/assets/banner.jpg'); 
+ background-size:cover;
+ background-repeat: repeat;
+ background-position: center;
+ padding: 50px;
+ height: 530px;
+ width: 1369px;
+ border-radius: 25px;
+
+}
+
+.hero h1{
+    color: #fff;
+    font-size: 70px;
+    font-weight: bolder;
+    position: absolute;
+    top:305px;
+    left: 25%;
+}
+
+.hero h2{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+    position: absolute;
+    top:400px;
+    left: 25%;
+
+}
+
+
+.hero a:link,
+.hero a:visited {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #17960cd2;
+  color: #ffffffbd;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 9px;
+  position: absolute;
+    top:480px;
+    left: 25%;
+    box-shadow: #158d0ab9;
+}
+.hero a:hover{
+    background-color: #158d0a;
+    color: #fff;
+}
+
+.hero-text{
+    background-color: #ffffff4b;
+    margin: auto;
+    margin-top: 63px;
+    width: 500px;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+

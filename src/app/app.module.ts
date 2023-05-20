@@ -19,6 +19,9 @@ import { RecipeService } from './recipes/recipe.service';
 import { MealsComponent } from './meals/meals.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
+import { HomeLayoutComponent } from './home-layout/home-layout.component';
+import { BodyLayoutComponent } from './body-layout/body-layout.component';
+import { FindMealComponent } from './find-meal/find-meal.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,9 @@ import { HomeComponent } from './home/home.component';
     RecipeEditComponent,
     MealsComponent,
     HomeComponent,
+    HomeLayoutComponent,
+    BodyLayoutComponent,
+    FindMealComponent,
   ],
   imports: [
     BrowserModule,
