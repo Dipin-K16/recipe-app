@@ -1,2 +1,28 @@
-<p>find-meal works!</p>
-<!-- <input type="text"  [(NgModel)]=""/> -->
+<div class="search">
+  <mat-form-field>
+    <input matInput placeholder="Type here..." [(ngModel)]="search" />
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="submitSearch()">
+    Search Recipe
+  </button>
+</div>
+
+<div class="meal-list" *ngFor="let meal of meals; let i = index">
+    <div (click)="getDetail(meal)" class="meal-item">
+        <span class="meal-name">
+            {{i+1}}. {{ meal.strMeal }} 
+    </span>
+    <span class="meal-image">
+        <img src="{{ meal.strMealThumb }}/preview "/>
+    </span>
+</div>
+</div>
+
+
+<!-- <div class="pop-up" *ngIf="mealId" >
+
+    {{mealDetail[0].strMeal}}
+
+
+</div> -->
+

@@ -2,15 +2,20 @@
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
-              <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
+              <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3, 4]"></span>
             </button>
             <a routerLink="/" class="navbar-brand">Recipe Book</a>
+            <!-- <a routerLink="body/recipes" class="navbar-brand">Recipies</a>
+            <a routerLink="body/shoppinglist" class="navbar-brand">Shopping-list</a>
+            <a routerLink="body/meals" class="navbar-brand">Meals Category</a>
+            <a routerLink="body/find-meals" class="navbar-brand">Find Meal</a> -->
           </div>
           <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
             <ul class="nav navbar-nav">
                 <li routerLinkActive="active"><a routerLink="body/recipes">Recipies</a></li>
                 <li routerLinkActive="active"><a routerLink="body/shoppinglist" >Shopping-list</a></li>
                 <li routerLinkActive="active"><a routerLink="body/meals" >Meals Category</a></li>
+                <li routerLinkActive="active"><a routerLink="body/find-meals" >Find Meal</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown" appDropDown>

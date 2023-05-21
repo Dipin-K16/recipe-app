@@ -22,6 +22,9 @@ import { HomeComponent } from './home/home.component';
 import { HomeLayoutComponent } from './home-layout/home-layout.component';
 import { BodyLayoutComponent } from './body-layout/body-layout.component';
 import { FindMealComponent } from './find-meal/find-meal.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -47,7 +50,9 @@ import { FindMealComponent } from './find-meal/find-meal.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [ShoppingListService,RecipeService],
   bootstrap: [AppComponent]

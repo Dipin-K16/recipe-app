@@ -8,6 +8,7 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
 import { MealsComponent } from './meals/meals.component';
 import { HomeComponent } from './home/home.component';
 import { BodyLayoutComponent } from './body-layout/body-layout.component';
+import { FindMealComponent } from './find-meal/find-meal.component';
 
 const routes: Routes = [
   {
@@ -45,6 +46,9 @@ const routes: Routes = [
   {
     path:'meals',
     component: MealsComponent,
+  },
+  {
+    path:'find-meals',component:FindMealComponent,
   },
 ],
 },
